@@ -5,6 +5,7 @@ import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { HideLoading, ShowLoading } from "../redux/alerts";
+import logo from "./Red Simple Cute Online Book Club Logo.png"; 
 
 function Home() {
   const dispatch = useDispatch();
@@ -43,10 +44,9 @@ function Home() {
   return (
     <div className="layout">
       <div className="header d-flex justify-content-between align-items-center">
-        <h1 className="text-white">
-          {" "}
-          <b className="secondary-text">GRADE</b> BOOK{" "}
-        </h1>
+      <a href="/">
+        <img width="100px" src={logo} />
+        </a>
         <div>
           <h1
             className="text-white text-small cursor-pointer underline"
@@ -62,7 +62,7 @@ function Home() {
       {results.length > 0 ? (
         <Row gutter={[20, 20]}>
           <Col span={24}>
-            <h1 className="text-large my-3">Welcome to Result Portal - Grade Book</h1>
+            <h1 className="text-large my-3">Welcome to Result Portal - Smart Book</h1>
             <h1 className="text-medium my-3">
               Select Your Examination{" "}
             </h1>
