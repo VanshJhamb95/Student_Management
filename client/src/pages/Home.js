@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { HideLoading, ShowLoading } from "../redux/alerts";
-import logo from "./Red Simple Cute Online Book Club Logo.png"; 
+import logo from "../Red Simple Cute Online Book Club Logo.png"; 
 
 function Home() {
   const dispatch = useDispatch();

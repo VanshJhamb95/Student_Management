@@ -4,6 +4,8 @@ import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { HideLoading, ShowLoading } from "../redux/alerts";
+import logo from "../Red Simple Cute Online Book Club Logo.png";
+
 function ResultCheck() {
   const navigate = useNavigate()
   const [rollNo, setRollNo] = React.useState("");
@@ -104,9 +106,9 @@ function ResultCheck() {
   return (
     <div className="layout">
       <div className="header d-flex justify-content-between align-items-center">
-        <h1 className="text-white">
-          <b className="secondary-text">GRADE</b> BOOK
-        </h1>
+      <a href="/">
+        <img width="100px" src={logo} />
+        </a>
         <div>
           <h1
             className="text-white text-small cursor-pointer underline"

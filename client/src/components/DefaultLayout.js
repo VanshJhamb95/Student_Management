@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import logo from "../Red Simple Cute Online Book Club Logo.png";
 
 function DefaultLayout(props) {
   const { employee } = useSelector((state) => state.employee);
@@ -8,9 +9,9 @@ function DefaultLayout(props) {
   return (
     <div className="layout">
       <div className="header d-flex justify-content-between align-items-center">
-        <h1 className="text-white">
-          <b className="secondary-text">GRADE</b> BOOK
-        </h1>
+      <a href="/">
+        <img width="100px" src={logo} />
+        </a>
         <div className="d-flex align-items-center gap-4">
           <h1
             className="text-white text-small cursor-pointer"
